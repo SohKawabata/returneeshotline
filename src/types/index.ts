@@ -6,7 +6,9 @@ export type Page =
   | 'events'
   | 'research'
   | 'team'
-  | 'donate';
+  | 'donate'
+  | 'admin'
+  | 'login';
 
 export interface Event {
   id: string;

@@ -11,16 +11,24 @@ import Events from './pages/Events';
 import Research from './pages/Research';
 import Team from './pages/Team';
 import Donate from './pages/Donate';
+import Login from './pages/Login';
+import Admin from './pages/Admin';
+import { useAuth } from './contexts/AuthContext';
 import type { Page } from './types';
 
 function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
+  const { user, userRole } = useAuth();
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [currentPage]);
 
   const handleNavigate = (page: Page) => {
+    if (page === 'admin' && !user) {
+      setCurrentPage('login');
+      return;
+    }
     setCurrentPage(page);
   };
 
@@ -42,10 +50,22 @@ function App() {
         return <Team />;
       case 'donate':
         return <Donate />;
+      case 'login':
+        return <Login onNavigate={handleNavigate} />;
+      case 'admin':
+        if (!user || !userRole) {
+          setCurrentPage('login');
+          return <Login onNavigate={handleNavigate} />;
+        }
+        return <Admin onNavigate={handleNavigate} />;
       default:
         return <Home onNavigate={handleNavigate} />;
     }
   };
+
+  if (currentPage === 'admin') {
+    return renderPage();
+  }
 
   return (
     <div className="min-h-screen bg-white">

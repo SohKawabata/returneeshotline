@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown, Globe } from 'lucide-react';
+import { Menu, X, ChevronDown, Globe, Settings } from 'lucide-react';
 import type { Page } from '../types';
 import { useLanguage } from '../contexts/LanguageContext';
+import { useAuth } from '../contexts/AuthContext';
 
 interface NavigationProps {
   currentPage: Page;
@@ -10,6 +11,7 @@ interface NavigationProps {
 
 export default function Navigation({ currentPage, onNavigate }: NavigationProps) {
   const { language, setLanguage, t } = useLanguage();
+  const { user, userRole } = useAuth();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isProgramsOpen, setIsProgramsOpen] = useState(false);
   const [isInvolvedOpen, setIsInvolvedOpen] = useState(false);
@@ -182,6 +184,16 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
               <span>{language === 'en' ? 'JP' : 'EN'}</span>
             </button>
 
+            {user && userRole && (
+              <button
+                onClick={() => handleNavigate('admin')}
+                className="ml-2 p-2 rounded-lg hover:bg-gray-100 transition-colors text-gray-700"
+                title="Admin Dashboard"
+              >
+                <Settings className="w-5 h-5" />
+              </button>
+            )}
+
             <button
               onClick={() => handleNavigate('donate')}
               className="ml-2 px-6 py-2 bg-gradient-to-r from-orange-400 to-amber-400 text-white font-semibold rounded-full hover:from-orange-500 hover:to-amber-500 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
@@ -289,6 +301,16 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
               <Globe className="w-4 h-4 mr-2" />
               {language === 'en' ? '日本語 (Japanese)' : 'English'}
             </button>
+
+            {user && userRole && (
+              <button
+                onClick={() => handleNavigate('admin')}
+                className="block w-full text-left px-3 py-2 rounded-lg text-gray-700 hover:bg-sky-50 hover:text-sky-600 transition-colors flex items-center"
+              >
+                <Settings className="w-4 h-4 mr-2" />
+                Admin Dashboard
+              </button>
+            )}
 
             <button
               onClick={() => handleNavigate('donate')}
