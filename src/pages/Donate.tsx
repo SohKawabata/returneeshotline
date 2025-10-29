@@ -8,35 +8,35 @@ export default function Donate() {
       description: 'Support student-led study sessions, peer tutoring, and academic resources.',
     },
     {
-      icon: Heart,
-      title: 'Mental Health Services',
-      description: 'Fund counseling sessions and wellness workshops for returnee youth.',
+      icon: PlanetEarth,
+      title: 'Global Expansion',
+      description: 'Global Expansion to support returnees in other countries.',
     },
     {
       icon: Users,
-      title: 'Community Events',
+      title: 'International Events',
       description: 'Enable cultural celebrations, workshops, and networking opportunities.',
     },
   ];
 
   const donationTiers = [
     {
-      amount: '¥3,000',
+      amount: '¥1,500',
       title: 'Supporter',
-      description: 'Provides study materials for one student for a month',
-      benefits: ['Digital thank you card', 'Monthly newsletter'],
-    },
+      description: 'The Study Session Sponsor'
+      benefits: ['Digital Thank You Card', 'Honoring name of the donor on our website'],
+    }, 
     {
-      amount: '¥10,000',
-      title: 'Champion',
-      description: 'Funds a counseling session for a student in need',
-      benefits: ['Everything in Supporter', 'Recognition on our website', 'Quarterly impact reports'],
+      amount:'¥4000',
+      title: 'Patron',
+      description: 'The Community Builder'
+      benefits: ['Everything in Supporter', 'Executive Monthly Updates],
     },
     {
       amount: '¥30,000',
-      title: 'Hero',
-      description: 'Sponsors a student for our Study Session Program',
-      benefits: ['Everything in Champion', 'Invitation to exclusive events', 'Direct student impact stories'],
+      title: 'Champion',
+      description: 'The Future Leader Investor',
+      benefits: ['Everything in Patron', 'Invitation to exclusive events', 'Personal Comment from the Represenative'],
     },
   ];
 
