@@ -30,7 +30,7 @@ export default function Donate() {
       amount:'¥4000',
       title: 'Patron',
       description: 'The Community Builder'
-      benefits: ['Everything in Supporter', 'Executive Monthly Updates],
+      benefits: ['Everything in Supporter', 'Executive Monthly Updates'],
     },
     {
       amount: '¥30,000',
