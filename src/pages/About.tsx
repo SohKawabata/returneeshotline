@@ -55,13 +55,12 @@ export default function About({ onNavigate }: AboutProps) {
               <div className="relative">
                 <h2 className="text-3xl font-bold mb-6">Our Story</h2>
                 <p className="text-sky-50 mb-4 leading-relaxed">
-                  Founded in 2020 by returnee high school students who felt the struggle firsthand, Returnees Hotline | Japan began as a small peer support group. What started with just a handful of students helping each other has grown into a comprehensive student-led organization serving hundreds of returnees annually.
-                </p>
-                <p className="text-sky-50 mb-4 leading-relaxed">
-                  As returnees ourselves, we intimately understand the challenges we all face: language barriers, cultural adjustment, identity questions, and academic pressures. Through our student-run programs and peer support network, we've helped countless fellow students not just adapt, but thrive.
-                </p>
-                <p className="text-sky-50 leading-relaxed">
-                  Today, our team of returnee student leaders continues to expand our reach, develop innovative peer-led programs, and advocate for better support systems for returnees throughout Japan.
+                 I was a returnee from Singapore who was living there for more than 11 years. When I came back to Japan due to my parent’s work, I was forced to study for the entrance exams to enter a good school which accepts returnees in Japan, and the result was devastating which made me exhausted. After entering the school I got accepted to, since I was completely different from the other students, I was mocked and bullied by other students, repeatedly told as a stupid and a crazy student. I was extremely depressed and eventually got tired of life due to all the pain and suffering I experienced just because I came back to Japan. I lost all hope living in Japan and even thought of committing suicide. In reality, due to Japanese society excessively focusing on academics, returnees are suffering to adapt to the Japanese Educational System and society. Since I did not want to see returnees suffering like me ever again, I started this organization where we can support returnees adapt to the Japanese environment, both socially and academically.
+
+              className="text-sky-50 mb-4 leading-relaxed">
+            
+              className="text-sky-50 leading-relaxed">
+                 
                 </p>
               </div>
             </div>
