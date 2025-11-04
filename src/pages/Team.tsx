@@ -3,14 +3,14 @@ import { Mail, Linkedin } from 'lucide-react';
 export default function Team() {
   const teamMembers = [
     {
-      name: 'Yuki Tanaka',
-      role: 'Executive Director',
+      name: 'Soh Kawabata',
+      role: 'Founder and Representative Director',
       bio: 'Former returnee with 15 years of experience in education and youth development. Passionate about creating inclusive spaces for all students.',
       imageUrl: 'https://images.pexels.com/photos/3782143/pexels-photo-3782143.jpeg?auto=compress&cs=tinysrgb&w=400',
     },
     {
-      name: 'Sarah Williams',
-      role: 'Director of Programs',
+      name: 'Arisa Hoshikawa',
+      role: 'Director',
       bio: 'Educational psychologist specializing in cross-cultural transitions. Developed our Study Session Program curriculum.',
       imageUrl: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400',
     },
