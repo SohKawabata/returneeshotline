@@ -67,11 +67,7 @@ export default function Programs() {
                 <div className="flex-grow">
                   <h2 className="text-3xl font-bold text-gray-900 mb-4">Study Session Program</h2>
                   <p className="text-gray-600 mb-6 leading-relaxed text-lg">
-                    Academic support tailored to the needs of returnee students navigating the
-                    Japanese education system. Our experienced tutors and mentors provide guidance in
-                    Japanese language, core subjects, and exam preparation. Small group sessions
-                    foster collaborative learning and help students build confidence in their
-                    academic abilities.
+                    Our team teaches Academic English towards students for the preparation of English Proficiency Tests, such as TOEFL and IELTS. Our aim is to make English accessible for anyone in Japan, no matter their backgrounds, and provide high quality Academic English sessions.
                   </p>
                   <div className="grid sm:grid-cols-3 gap-4 mb-6">
                     <div className="flex items-center text-gray-700">
